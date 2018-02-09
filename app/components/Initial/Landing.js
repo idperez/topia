@@ -93,6 +93,6 @@ const styles = StyleSheet.create({
     },
     loginButton: {
         backgroundColor: 'transparent',
-        marginTop: 10
+        marginTop: Dimensions.get('window').height / 25
     }
 });

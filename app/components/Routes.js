@@ -11,6 +11,8 @@ import Password from './Initial/Password';
 import Login from './Initial/Login';
 import Intro from './Initial/Intro';
 
+import TopiaMap from './Map/TopiaMap';
+
 export default class Routes extends Component {
 
     render() {
@@ -21,7 +23,7 @@ export default class Routes extends Component {
                         <Scene
                             hideNavBar={true}
                             key="landing"
-                            component={Landing}
+                            component={TopiaMap}
                         />
                         <Scene
                             hideNavBar={true}
