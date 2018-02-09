@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, Image, Text, View, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import MapView from 'react-native-maps';
 
@@ -8,7 +8,7 @@ import Job from './Markers/Job';
 export default class TopiaMap extends React.Component {
 
     animateToRegion() {
-        region = {
+        const region = {
             latitude: 37.72111,
             longitude: -122.4311,
             latitudeDelta: 0.0122,
@@ -46,6 +46,6 @@ export default class TopiaMap extends React.Component {
 
 const styles = StyleSheet.create({
     map: {
-        ...StyleSheet.absoluteFillObject,
+        ...StyleSheet.absoluteFillObject
     }
 });
