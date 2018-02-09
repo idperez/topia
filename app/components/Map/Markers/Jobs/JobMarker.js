@@ -3,7 +3,7 @@ import { Dimensions, Image, Text, View, StyleSheet } from 'react-native';
 
 import MapView from 'react-native-maps';
 
-export default class Job extends React.Component {
+export default class JobMarker extends React.Component {
 
     constructor(props) {
         super(props);
@@ -14,7 +14,7 @@ export default class Job extends React.Component {
 
     getDisplayAmount() {
         if(this.props.amount > 9) {
-            return "+9";
+            return "9+";
         } else if(this.props.amount == 1) {
             return "";
         } else {
@@ -24,6 +24,11 @@ export default class Job extends React.Component {
 
     jobClicked() {
         this.setState({pressed: !this.state.pressed});
+        this.props.displayJob(
+            this.props.latitude,
+            this.props.longitude,
+            this.props.index
+        );
     }
 
     render() {
@@ -86,6 +91,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
         backgroundColor: '#E7B7DC',
-        fontSize: 18
+        fontSize: 16
     }
 });
