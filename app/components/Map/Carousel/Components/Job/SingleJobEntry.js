@@ -16,7 +16,6 @@ export default class SingleJobEntry extends React.Component {
                 <Text>{jobtitle}</Text>
                 <Text>{company}</Text>
                 <Text>{snippet}</Text>
-                <Text>herro</Text>
             </View>
         );
     }

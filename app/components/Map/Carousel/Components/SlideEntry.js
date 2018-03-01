@@ -9,6 +9,8 @@ import styles from './../Styles/EntryStyles';
 import MultipleJobEntry from './Job/MultipleJobEntry';
 import SingleJobEntry from './Job/SingleJobEntry';
 
+import { Actions } from 'react-native-router-flux';
+
 export default class SliderEntry extends Component {
 
     constructor(props) {
@@ -20,11 +22,7 @@ export default class SliderEntry extends Component {
     }
 
     showJobCardContent() {
-        if(this.props.data.jobs.length > 1) {
-
-        } else {
-
-        }
+        Actions.jobView({amount: this.props.data.jobs.length})
     }
 
     render () {

@@ -10,7 +10,7 @@ exports.getJobInformation = (latitude, longitude) => {
             }
         };
 
-        let url = `http://topia-env.ec2n87mrb8.us-west-2.elasticbeanstalk.com/search/jobs/coords?username=dev&lat=${latitude}&long=${longitude}&limit=200`;
+        let url = `http://topia-env.ec2n87mrb8.us-west-2.elasticbeanstalk.com/jobs?type=coordinates&lat=${latitude}&long=${longitude}&limit=200`;
 
         fetch(url, requestObj)
             .then(res => {

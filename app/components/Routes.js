@@ -12,6 +12,7 @@ import Login from './Initial/Login';
 import Intro from './Initial/Intro';
 
 import TopiaMap from './Map/TopiaMap';
+import JobView from './Jobs/JobView';
 
 export default class Routes extends Component {
 
@@ -22,8 +23,13 @@ export default class Routes extends Component {
                     <Scene key="initial">
                         <Scene
                             hideNavBar={true}
-                            key="landing"
+                            key="map"
                             component={TopiaMap}
+                        />
+                        <Scene
+                            hideNavBar={true}
+                            key="jobView"
+                            component={JobView}
                         />
                         <Scene
                             hideNavBar={true}

@@ -101,7 +101,7 @@ export default class TopiaMap extends React.Component {
             latitude: swipedJob.latitude,
             longitude: swipedJob.longitude,
             latitudeDelta: 0.0082,
-            longitudeDelta: 0.0061,
+            longitudeDelta: 0.0061
         };
         this._map.animateToRegion(region, 100);
     }
