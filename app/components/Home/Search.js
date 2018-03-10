@@ -4,6 +4,7 @@ import { Dimensions, Image, Text, View, StyleSheet } from 'react-native';
 import { Icon, List, ListItem } from 'react-native-elements';
 import { sanFranciscoWeights } from 'react-native-typography';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
+import { Actions } from 'react-native-router-flux';
 
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
@@ -39,7 +40,8 @@ export default class Home extends React.Component {
                     <Icon
                         name='keyboard-arrow-left'
                         color='#000000'
-                        size={50}/>
+                        size={50}
+                        onPress={() => Actions.pop()}/>
                 </View>
                 <View style={{flex: 1}}>
                     <GooglePlacesAutocomplete
