@@ -1,7 +1,7 @@
 import React from 'react';
 import { Dimensions, Image, Text, View, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 
-import { SearchBar } from 'react-native-elements';
+import { SearchBar, Card, Icon } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 
 import { sanFranciscoWeights } from 'react-native-typography';
@@ -21,6 +21,27 @@ export default class Home extends React.Component {
                     </TouchableOpacity>
                 </View>
                 <ScrollView>
+                <View style={styles.saveList}>
+                    <TouchableOpacity onPress={Actions.matches}>
+                        <Card containerStyle={{padding: 0}}>
+                            <View style={styles.navBar}>
+                                <View style={styles.leftContainer}>
+                                    <Image
+                                        style={{width: 60, height: 60}}
+                                        source={{uri: 'https://i0.wp.com/barobite.com/wp-content/uploads/2017/04/avatar-round-3-1.png'}}
+                                    />
+                                </View>
+                                <Text>Your city matches</Text>
+                                <View style={styles.rightContainer}>
+                                    <Icon
+                                        name='chevron-right'
+                                        type='font-awesome'
+                                        color='black'/>
+                                </View>
+                            </View>
+                        </Card>
+                    </TouchableOpacity>
+                </View>
                 <Text style={styles.headerText}>
                     Jobs You May Like
                 </Text>
@@ -105,5 +126,30 @@ const styles = StyleSheet.create({
         fontSize: 12,
         marginLeft: 10,
         color: '#494763'
+    },
+    rightSection: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        alignItems: 'center'
+    },
+    navBar: {
+        height: 75,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    leftContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        marginLeft: 10
+    },
+    rightContainer: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        marginRight: 5
     }
 });

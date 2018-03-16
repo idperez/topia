@@ -33,6 +33,11 @@ const recentCities = [
 ];
 
 export default class Home extends React.Component {
+
+    displayMap() {
+        Actions.topiaMap;
+    }
+
     render() {
         return (
             <View style={{flex: 1, backgroundColor: '#ffffff'}} >
@@ -53,7 +58,7 @@ export default class Home extends React.Component {
                         fetchDetails={true}
                         renderDescription={row => row.description} // custom description render
                         onPress={(data, details = null) => { // 'details' is provided when fetchDetails = true
-                            console.log(data, details);
+                            Actions.topiaMap();
                         }}
 
                         getDefaultValue={() => ''}
@@ -77,6 +82,11 @@ export default class Home extends React.Component {
                                 height: 60,
                                 color: '#494763',
                                 fontSize: 25
+                            },
+                            description: {
+                                fontWeight: 'bold',
+                                marginTop: 10,
+                                height: 20
                             },
                             predefinedPlacesDescription: {
                                 color: '#1faadb'
@@ -114,7 +124,15 @@ export default class Home extends React.Component {
                                                 fill={item.match}
                                                 tintColor="#C6AADB"
                                                 onAnimationComplete={() => console.log('onAnimationComplete')}
-                                                backgroundColor="#494763" />}
+                                                backgroundColor="#494763">
+                                                {
+                                                    (fill) => (
+                                                        <Text>
+                                                            {item.match}
+                                                        </Text>
+                                                    )
+                                                }
+                                            </AnimatedCircularProgress>}
                                             containerStyle={{ borderBottomWidth: 0 }}
                                             titleStyle={styles.titleText}
                                         />

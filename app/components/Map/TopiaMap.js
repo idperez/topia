@@ -9,9 +9,12 @@ import jobs from './../../lib/jobs/jobs';
 
 import Carousel from 'react-native-snap-carousel';
 
+import { Icon } from 'react-native-elements';
 import { sliderWidth, itemWidth } from './Carousel/Styles/EntryStyles';
 import SliderEntry from './Carousel/Components/SlideEntry';
 import carouselStyles from './Carousel/Styles/index.js';
+
+import { Actions } from 'react-native-router-flux';
 
 const SLIDER_1_FIRST_ITEM = 1;
 
@@ -121,6 +124,13 @@ export default class TopiaMap extends React.Component {
                 onMapReady={this.onMapReady}>
                 {this.state.mapMarkers}
             </MapView>
+                <View style={styles.leftContainer}>
+                    <Icon
+                        name='keyboard-arrow-left'
+                        color='#000000'
+                        size={50}
+                        onPress={() => Actions.pop()}/>
+                </View>
                 <View style={styles.carousel} >
                     <Carousel
                         ref={(c) => { if (!this.state.slider1Ref) { this.setState({ slider1Ref: c }); } }}
@@ -154,5 +164,10 @@ const styles = StyleSheet.create({
     },
     carousel: {
         marginTop: Dimensions.get('window').height / 1.5
-    }
+    },
+    leftContainer: {
+        flexDirection: 'row',
+        marginBottom: 20,
+        marginTop: 20
+    },
 });

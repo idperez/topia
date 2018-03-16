@@ -13,9 +13,7 @@ export default class SingleJobEntry extends React.Component {
 
         return (
             <View>
-                <Text>{jobtitle}</Text>
-                <Text>{company}</Text>
-                <Text>{snippet}</Text>
+                <Text>Yelp</Text>
             </View>
         );
     }

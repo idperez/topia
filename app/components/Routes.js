@@ -21,6 +21,7 @@ import Intro from './Initial/Intro';
 
 import Home from './Home/Home';
 import Search from './Home/Search';
+import Matches from './Home/Matches';
 import TopiaMap from './Map/TopiaMap';
 import JobView from './Jobs/JobView';
 
@@ -55,19 +56,19 @@ export default class Routes extends Component {
                                 icon={TabIcon}
                             />
                             <Scene
-                                hideNavBar={true}
                                 key="search"
+                                iconName="home"
                                 component={Search}
                             />
                             <Scene
-                                hideNavBar={true}
-                                key="jobView"
-                                component={JobView}
+                                key="matches"
+                                iconName="home"
+                                component={Matches}
                             />
                             <Scene
-                                hideNavBar={true}
-                                key="topiaMap"
-                                component={TopiaMap}
+                                key="jobView"
+                                iconName="home"
+                                component={JobView}
                             />
                         </Scene>
                         <Scene key="Saves" title="Saves" hideNavBar={true}>
@@ -95,6 +96,11 @@ export default class Routes extends Component {
                             />
                         </Scene>
                     </Scene>
+                    <Scene
+                        hideNavBar={true}
+                        key="topiaMap"
+                        component={TopiaMap}
+                    />
                     <Scene
                         hideNavBar={true}
                         key="createAccount"
