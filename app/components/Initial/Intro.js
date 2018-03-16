@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
+import { Actions } from 'react-native-router-flux';
 
 const styles = StyleSheet.create({
     image: {
@@ -46,7 +47,7 @@ const slides = [
 
 export default class Intro extends React.Component {
     _onDone = () => {
-        alert('App Starts');
+        Actions.pref();
     };
 
     render() {

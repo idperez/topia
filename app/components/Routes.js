@@ -47,10 +47,40 @@ export default class Routes extends Component {
         return (
             <Router>
                 <Scene key="root">
+                    <Scene
+                        hideNavBar={true}
+                        key="landing"
+                        component={Landing}
+                    />
+                    <Scene
+                        hideNavBar={true}
+                        key="createAccount"
+                        component={CreateAccount}
+                    />
+                    <Scene
+                        hideNavBar={true}
+                        key="password"
+                        component={Password}
+                    />
+                    <Scene
+                        hideNavBar={true}
+                        key="login"
+                        component={Login}
+                    />
+                    <Scene
+                        hideNavBar={true}
+                        key="intro"
+                        component={Intro}
+                    />
+                    <Scene
+                        hideNavBar={true}
+                        key="topiaMap"
+                        component={TopiaMap}
+                    />
                     <Scene key="tabbar" tabs={true}>
-                        <Scene key="Search" hideNavBar={true}>
+                        <Scene key="search" hideNavBar={true}>
                             <Scene
-                                key="exp"
+                                key="home"
                                 component={Home}
                                 iconName="home"
                                 icon={TabIcon}
@@ -96,36 +126,6 @@ export default class Routes extends Component {
                             />
                         </Scene>
                     </Scene>
-                    <Scene
-                        hideNavBar={true}
-                        key="topiaMap"
-                        component={TopiaMap}
-                    />
-                    <Scene
-                        hideNavBar={true}
-                        key="createAccount"
-                        component={CreateAccount}
-                    />
-                    <Scene
-                        hideNavBar={true}
-                        key="landing"
-                        component={Landing}
-                    />
-                    <Scene
-                        hideNavBar={true}
-                        key="password"
-                        component={Password}
-                    />
-                    <Scene
-                        hideNavBar={true}
-                        key="login"
-                        component={Login}
-                    />
-                    <Scene
-                        hideNavBar={true}
-                        key="intro"
-                        component={Intro}
-                    />
                 </Scene>
             </Router>
         );
