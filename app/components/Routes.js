@@ -25,6 +25,9 @@ import Matches from './Home/Matches';
 import TopiaMap from './Map/TopiaMap';
 import JobView from './Jobs/JobView';
 
+import Feed from './Feed/Feed';
+import UserSearch from './Feed/UserSearch';
+
 import Preferences from './Preferences/Preferences';
 import Other from './Other/Other';
 import Saves from './Saves/Saves';
@@ -47,6 +50,72 @@ export default class Routes extends Component {
         return (
             <Router>
                 <Scene key="root">
+                    <Scene key="tabbar" tabs={true} activeTintColor="#89A7A7">
+                        <Scene key="search" hideNavBar={true}>
+                            <Scene
+                                key="home"
+                                component={Home}
+                                iconName="home"
+                                icon={TabIcon}
+                            />
+                            <Scene
+                                key="search"
+                                iconName="home"
+                                component={Search}
+                                icon={TabIcon}
+                            />
+                            <Scene
+                                key="matches"
+                                iconName="home"
+                                component={Matches}
+                                icon={TabIcon}
+                            />
+                            <Scene
+                                key="jobView"
+                                iconName="home"
+                                component={JobView}
+                                icon={TabIcon}
+                            />
+                        </Scene>
+                        <Scene key="Feed" title="Feed" hideNavBar={true}>
+                            <Scene
+                                key="feed"
+                                component={Feed}
+                                iconName="recent-actors"
+                                icon={TabIcon}
+                            />
+                            <Scene
+                                key="userSearch"
+                                iconName="recent-actors"
+                                component={UserSearch}
+                                icon={TabIcon}
+                            />
+                        </Scene>
+                        <Scene key="Saves" title="Saves" hideNavBar={true}>
+                            <Scene
+                                key="save"
+                                component={Saves}
+                                iconName="favorite"
+                                icon={TabIcon}
+                            />
+                        </Scene>
+                        <Scene key="Preferences" title="Preferences" hideNavBar={true}>
+                            <Scene
+                                key="pref"
+                                component={Preferences}
+                                icon={TabIcon}
+                                iconName="account-circle"
+                            />
+                        </Scene>
+                        <Scene key="Other" hideNavBar={true}>
+                            <Scene
+                                key="other"
+                                component={Other}
+                                icon={TabIcon}
+                                iconName="list"
+                            />
+                        </Scene>
+                    </Scene>
                     <Scene
                         hideNavBar={true}
                         key="landing"
@@ -77,55 +146,6 @@ export default class Routes extends Component {
                         key="topiaMap"
                         component={TopiaMap}
                     />
-                    <Scene key="tabbar" tabs={true}>
-                        <Scene key="search" hideNavBar={true}>
-                            <Scene
-                                key="home"
-                                component={Home}
-                                iconName="home"
-                                icon={TabIcon}
-                            />
-                            <Scene
-                                key="search"
-                                iconName="home"
-                                component={Search}
-                            />
-                            <Scene
-                                key="matches"
-                                iconName="home"
-                                component={Matches}
-                            />
-                            <Scene
-                                key="jobView"
-                                iconName="home"
-                                component={JobView}
-                            />
-                        </Scene>
-                        <Scene key="Saves" title="Saves" hideNavBar={true}>
-                            <Scene
-                                key="save"
-                                component={Saves}
-                                iconName="save"
-                                icon={TabIcon}
-                            />
-                        </Scene>
-                        <Scene key="Preferences" title="Preferences" hideNavBar={true}>
-                            <Scene
-                                key="pref"
-                                component={Preferences}
-                                icon={TabIcon}
-                                iconName="account-circle"
-                            />
-                        </Scene>
-                        <Scene key="Other" hideNavBar={true}>
-                            <Scene
-                                key="other"
-                                component={Other}
-                                icon={TabIcon}
-                                iconName="list"
-                            />
-                        </Scene>
-                    </Scene>
                 </Scene>
             </Router>
         );

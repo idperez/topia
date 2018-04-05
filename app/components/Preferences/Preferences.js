@@ -1,19 +1,61 @@
 import React from 'react';
-import { Dimensions, Image, Text, View, StyleSheet } from 'react-native';
+import { Dimensions, Image, Text, View, StyleSheet, ScrollView } from 'react-native';
 import { Button, List, ListItem, Card, Icon, FormLabel, FormInput } from 'react-native-elements';
 import { sanFranciscoWeights } from 'react-native-typography';
-import { AnimatedCircularProgress } from 'react-native-circular-progress';
+import profile from '../../lib/preferences/preferences';
+
 
 export default class Preferences extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.state = {
+            title: "",
+            inputTitle: "",
+            bedroom: 0,
+            inputBedroom: 0,
+            bathroom: 0,
+            inputBathroom: 0,
+            interests: []
+        };
+    }
+
+    getProfile = () => {
+        profile.getProfile().then((result) => {
+            this.setState({
+                title: result.prefs_jobs_titles[0],
+                bedroom: result.prefs_house_beds,
+                bathroom: result.prefs_house_baths
+            });
+        }).catch(err => {
+            throw err;
+        });
+    };
+
+    setProfile = () => {
+        profile.setProfile(
+            this.state.inputTitle,
+            this.state.inputBedroom,
+            this.state.inputBathroom
+        ).then((result) => {
+            this.setState({
+                title: this.state.inputTitle
+            });
+            alert("Preferences Saved!");
+        }).catch(err => {
+            throw err;
+        });
+    };
+
+    componentDidMount() {
+        this.getProfile();
     }
 
     render() {
 
         return (
-            <View style={styles.container}>
+            <ScrollView style={styles.container}>
                 <View style={styles.saveList}>
                     <Card containerStyle={{padding: 0}}>
                         <View style={styles.navBar}>
@@ -42,7 +84,8 @@ export default class Preferences extends React.Component {
                                 </Text>
                                 <FormLabel>Title</FormLabel>
                                 <FormInput
-                                    placeholder="Software Engineer"
+                                    placeholder={this.state.title}
+                                    onChangeText={(text) => this.setState({inputTitle: text})}
                                 />
                             </View>
                         </View>
@@ -57,11 +100,15 @@ export default class Preferences extends React.Component {
                                 </Text>
                                 <FormLabel>Bedroom</FormLabel>
                                 <FormInput
-                                    placeholder="3"
+                                    keyboardType="numeric"
+                                    placeholder={this.state.bedroom.toString()}
+                                    onChangeText={(text) => this.setState({bedroomInput: {text}})}
                                 />
                                 <FormLabel>Bathroom</FormLabel>
                                 <FormInput
-                                    placeholder="2"
+                                    keyboardType="numeric"
+                                    placeholder={this.state.bathroom.toString()}
+                                    onChangeText={(text) => this.setState({bathroomInput: {text}})}
                                 />
                             </View>
                         </View>
@@ -82,7 +129,14 @@ export default class Preferences extends React.Component {
                         </View>
                     </Card>
                 </View>
-            </View>
+                <View style={styles.saveButton}>
+                    <Button
+                        full
+                        backgroundColor="#89A7A7"
+                        title='Save'
+                        onPress={() => this.setProfile()}/>
+                </View>
+            </ScrollView>
         );
     }
 }
@@ -146,5 +200,9 @@ const styles = StyleSheet.create({
     },
     cardButton: {
         backgroundColor: 'white'
+    },
+    saveButton: {
+        marginTop: 15,
+        marginBottom: 15
     }
 });
