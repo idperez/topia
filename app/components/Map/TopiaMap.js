@@ -48,9 +48,10 @@ export default class TopiaMap extends React.Component {
     };
 
     onMapReady = () => {
+
         const region = {
-            latitude: 37.72111,
-            longitude: -122.4311
+            latitude: this.props.location.lat,
+            longitude: this.props.location.lng
         };
         this.getJobs(region);
     };
@@ -116,8 +117,8 @@ export default class TopiaMap extends React.Component {
                 ref={component => {this._map = component;}}
                 style={styles.map}
                 initialRegion={{
-                    latitude: 37.78825,
-                    longitude: -122.4324,
+                    latitude: this.props.location.lat,
+                    longitude: this.props.location.lng,
                     latitudeDelta: 0.0922,
                     longitudeDelta: 0.0421,
                 }}

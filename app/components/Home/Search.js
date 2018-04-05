@@ -34,10 +34,6 @@ const recentCities = [
 
 export default class Home extends React.Component {
 
-    displayMap() {
-        Actions.topiaMap;
-    }
-
     render() {
         return (
             <View style={{flex: 1, backgroundColor: '#ffffff'}} >
@@ -58,7 +54,7 @@ export default class Home extends React.Component {
                         fetchDetails={true}
                         renderDescription={row => row.description} // custom description render
                         onPress={(data, details = null) => { // 'details' is provided when fetchDetails = true
-                            Actions.topiaMap();
+                            Actions.topiaMap({location: details.geometry.location});
                         }}
 
                         getDefaultValue={() => ''}
