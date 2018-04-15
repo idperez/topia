@@ -3,16 +3,33 @@ import { Dimensions, Image, Text, View, StyleSheet } from 'react-native';
 
 import MapView from 'react-native-maps';
 
+import { Button, Card } from 'react-native-elements'
+
 import JobMarker from './../Map/Markers/Jobs/JobMarker';
 
 import JobList from './JobList';
 import JobDetails from './JobDetails';
 
+import Modal from "react-native-modal";
+
+import { Actions } from 'react-native-router-flux';
+
+import DropdownAlert from 'react-native-dropdownalert';
+
+
 export default class JobView extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.state = {
+            isVisible: false
+        }
     }
+
+    jobSavedParent = () => {
+        this.dropdown.alertWithType('custom', 'Job Saved!', "");
+    };
 
     render() {
 
@@ -34,7 +51,6 @@ export default class JobView extends React.Component {
                         zoomEnabled={false}>
                         <JobMarker
                             index={0}
-                            amount={8}
                             latitude={37.78825}
                             longitude={-122.4324}
                         />
@@ -45,9 +61,12 @@ export default class JobView extends React.Component {
                         this.props.amount > 1 ?
                             <JobList/>
                             :
-                            <JobDetails/>
+                            <JobDetails jobSavedParent={this.jobSavedParent}/>
                     }
                 </View>
+                <DropdownAlert ref={ref => this.dropdown = ref}  containerStyle={{
+                    backgroundColor: '#8A7090'
+                }} />
             </View>
         );
     }
@@ -62,5 +81,9 @@ const styles = StyleSheet.create({
     },
     carousel: {
         marginTop: Dimensions.get('window').height / 1.5
+    },
+    saveButton: {
+        marginTop: 15,
+        marginBottom: 15
     }
 });

@@ -23,7 +23,9 @@ import Home from './Home/Home';
 import Search from './Home/Search';
 import Matches from './Home/Matches';
 import TopiaMap from './Map/TopiaMap';
+import HousingMap from './Map/HousingMap';
 import JobView from './Jobs/JobView';
+import LifeCardSave from './Saves/LifeCardSave';
 
 import Feed from './Feed/Feed';
 import UserSearch from './Feed/UserSearch';
@@ -74,6 +76,18 @@ export default class Routes extends Component {
                                 key="jobView"
                                 iconName="home"
                                 component={JobView}
+                                icon={TabIcon}
+                            />
+                            <Scene
+                                key="saveLife"
+                                iconName="home"
+                                component={LifeCardSave}
+                                icon={TabIcon}
+                            />
+                            <Scene
+                                key="housingMap"
+                                iconName="home"
+                                component={HousingMap}
                                 icon={TabIcon}
                             />
                         </Scene>
