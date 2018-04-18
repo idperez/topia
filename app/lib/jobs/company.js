@@ -10,7 +10,7 @@ exports.getCompanyInfo = (company) => {
             }
         };
 
-        let url = `http://topia-env.ec2n87mrb8.us-west-2.elasticbeanstalk.com/search/jobs/companyinfo?companyname=${company}`;
+        let url = `http://topia-env.ec2n87mrb8.us-west-2.elasticbeanstalk.com/jobs/companies/${company}`;
 
         fetch(url, requestObj)
             .then(res => {

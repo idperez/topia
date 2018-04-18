@@ -61,7 +61,7 @@ export default class JobView extends React.Component {
                         this.props.amount > 1 ?
                             <JobList/>
                             :
-                            <JobDetails jobSavedParent={this.jobSavedParent}/>
+                            <JobDetails jobSavedParent={this.jobSavedParent} jobData={this.props.jobData}/>
                     }
                 </View>
                 <DropdownAlert ref={ref => this.dropdown = ref}  containerStyle={{
