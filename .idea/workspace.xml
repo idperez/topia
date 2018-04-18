@@ -5,9 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Jobs/JobDetails.js" afterPath="$PROJECT_DIR$/app/components/Jobs/JobDetails.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Jobs/JobView.js" afterPath="$PROJECT_DIR$/app/components/Jobs/JobView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Map/Carousel/Components/SlideEntry.js" afterPath="$PROJECT_DIR$/app/components/Map/Carousel/Components/SlideEntry.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Routes.js" afterPath="$PROJECT_DIR$/app/components/Routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/lib/jobs/company.js" afterPath="$PROJECT_DIR$/app/lib/jobs/company.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,14 +23,36 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Routes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/Routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="JobDetails.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/components/Jobs/JobDetails.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+            <state relative-caret-position="217">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobView.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/components/Jobs/JobView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-780">
+              <caret line="1" column="62" lean-forward="false" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,10 +148,10 @@
         <option value="$PROJECT_DIR$/app/components/Map/Carousel/Components/Housing/HouseEntry.js" />
         <option value="$PROJECT_DIR$/app/components/Map/Carousel/Components/Job/SingleJobEntry.js" />
         <option value="$PROJECT_DIR$/app/components/Map/Carousel/Components/SlideEntry.js" />
-        <option value="$PROJECT_DIR$/app/components/Jobs/JobView.js" />
-        <option value="$PROJECT_DIR$/app/components/Routes.js" />
         <option value="$PROJECT_DIR$/app/lib/jobs/company.js" />
         <option value="$PROJECT_DIR$/app/components/Home/Search.js" />
+        <option value="$PROJECT_DIR$/app/components/Routes.js" />
+        <option value="$PROJECT_DIR$/app/components/Jobs/JobView.js" />
         <option value="$PROJECT_DIR$/app/components/Jobs/JobDetails.js" />
       </list>
     </option>
@@ -278,7 +297,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js.eslint.eslintPackage" value="/usr/local/lib/node_modules/eslint" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="sea&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Home/Search.js&#10;route&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Routes.js&#10;housing&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Map/HousingMap.js&#10;topia&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Map/TopiaMap.js&#10;JobView&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Jobs/JobView.js&#10;intro&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Initial/Intro.js&#10;ntro&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Initial/Intro.js&#10;atches&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Home/Matches.js&#10;Landing&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Initial/Landing.js" />
+    <property name="SearchEverywhereHistoryKey" value="jobvi&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Jobs/JobView.js&#10;jobde&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Jobs/JobDetails.js&#10;sea&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Home/Search.js&#10;route&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Routes.js&#10;housing&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Map/HousingMap.js&#10;topia&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Map/TopiaMap.js&#10;JobView&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Jobs/JobView.js&#10;intro&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Initial/Intro.js&#10;ntro&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Initial/Intro.js&#10;atches&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Home/Matches.js&#10;Landing&#9;FILE&#9;file:///Users/isidro/Projects/topia/app/components/Initial/Landing.js" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/react-native-slideshow/Slideshow.js" />
   </component>
   <component name="RecentsManager">
@@ -390,31 +409,31 @@
       <workItem from="1522961510649" duration="8263000" />
       <workItem from="1523570407273" duration="478000" />
       <workItem from="1523812726775" duration="7540000" />
-      <workItem from="1524002262382" duration="2627000" />
+      <workItem from="1524002262382" duration="3383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101473000" />
+    <option name="totallyTimeSpent" value="102229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="913" height="740" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26966292" sideWeight="0.51628274" order="1" side_tool="true" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21772853" sideWeight="0.489603" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21692307" sideWeight="0.489603" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18760376" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2723077" sideWeight="0.48371723" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2723077" sideWeight="0.48371723" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26966292" sideWeight="0.51628274" order="1" side_tool="true" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18760376" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -679,6 +698,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="121" column="47" lean-forward="false" selection-start-line="121" selection-start-column="47" selection-end-line="121" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -693,16 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/Jobs/JobView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="63" column="33" lean-forward="false" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -727,16 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="47" column="11" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="47" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/components/Routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="59" column="53" lean-forward="false" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -794,10 +794,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Jobs/JobView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="1" column="62" lean-forward="false" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/Jobs/JobDetails.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
+        <state relative-caret-position="217">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

@@ -35,7 +35,7 @@ export default class JobList extends React.Component {
     };
 
     componentDidMount() {
-        companyInfo.getCompanyInfo("google")
+        companyInfo.getCompanyInfo(this.props.jobData.jobs[0].company)
             .then((result) => {
                 console.log(JSON.stringify(result));
                 if(!result.err) {
@@ -52,7 +52,7 @@ export default class JobList extends React.Component {
     render() {
 
         return (
-            <ScrollView>
+            <View>
                 <Card containerStyle={{marginTop: 0, marginLeft: 0, marginRight: 0}}>
                     { this.state.jobSaved ?
                         <Icon name="heart" type="font-awesome"  color='#494763'/>
@@ -62,9 +62,9 @@ export default class JobList extends React.Component {
                 </Card>
                 <PricingCard
                     color='#4f9deb'
-                    title='UX Engineer'
+                    title={this.props.jobData.jobs[0].jobtitle}
                     price='$95,000'
-                    info={['yelp', 'San Francisco', 'Entry Level']}
+                    info={[this.props.jobData.jobs[0].company, this.props.jobData.jobs[0].formattedLocation]}
                     button={{ title: 'See Nearby Homes', icon: 'home' }}
                     onButtonPress={() => this.findHomesPressed()}
                 />
@@ -244,7 +244,7 @@ export default class JobList extends React.Component {
                     :
                     <View/>
                 }
-            </ScrollView>
+            </View>
         );
     }
 }

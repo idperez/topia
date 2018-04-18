@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dimensions, Image, Text, View, StyleSheet } from 'react-native';
+import { Dimensions, Image, Text, View, StyleSheet, ScrollView } from 'react-native';
 
 import MapView from 'react-native-maps';
 
@@ -34,7 +34,7 @@ export default class JobView extends React.Component {
     render() {
 
         return (
-            <View style={{
+            <ScrollView style={{
                 flex: 1,
                 flexDirection: 'column'
             }}>
@@ -67,7 +67,7 @@ export default class JobView extends React.Component {
                 <DropdownAlert ref={ref => this.dropdown = ref}  containerStyle={{
                     backgroundColor: '#8A7090'
                 }} />
-            </View>
+            </ScrollView>
         );
     }
 }
