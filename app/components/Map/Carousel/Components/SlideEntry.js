@@ -22,7 +22,10 @@ export default class SliderEntry extends Component {
     }
 
     showJobCardContent() {
-        Actions.jobView({amount: this.props.data.jobs.length, jobData: this.props.data})
+        Actions.jobView({
+            amount: this.props.data.jobs.length,
+            jobData: this.props.data
+        })
     }
 
     render () {

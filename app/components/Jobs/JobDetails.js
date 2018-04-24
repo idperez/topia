@@ -31,7 +31,7 @@ export default class JobList extends React.Component {
     };
 
     findHomesPressed = () => {
-        Actions.housingMap();
+        Actions.housingMap({jobData: this.props.jobdata});
     };
 
     componentDidMount() {
@@ -194,7 +194,7 @@ export default class JobList extends React.Component {
                                     titleStyle={styles.titleText}
                                 />
                             </List>
-                            { this.state.companyInfo.hasOwnProperty('ceo')
+                            { this.state.companyInfo.ceo.hasOwnProperty('image')
                                 ?
                                 <View>
                                     <View style={styles.navForm}>
